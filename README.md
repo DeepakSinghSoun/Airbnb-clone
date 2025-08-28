@@ -1,33 +1,49 @@
-project name is aibnb clone
+🏡 Airbnb Clone
 
-first create README.md file for understant the project or code.
+A full-stack web application inspired by Airbnb, built using Node.js, Express.js, MongoDB (Mongoose), EJS, and Passport.js.
+This project demonstrates CRUD operations, authentication, image uploads, and cloud storage integration — providing a complete learning experience for building scalable web apps.
 
-install the npm init -y for json package
-npm i express
-npm i ejs
-npm i mongoose
-npm i method overloding
-npm i ejs mate
-npm i express-session
-npm i connect-flash
-npm i passport
-npm i passport-local
-npm i passport-local-mongoose
-npm i multer
-npm i dotenv
-npm i cloudinary
-npm i multer-storage-cloudinary 
 
-create a file app.js and base setup like ecpress, mongoose, ejs, and path = 8080.
+🚀 Features
+🔑 User Authentication (Signup/Login) with Passport.js
+💬 Flash messages for user feedback
+📝 Create, Read, Update, Delete (CRUD) listings
+🖼️ Image uploads with Multer + Cloudinary
+🎨 Responsive UI using Bootstrap 5 & Font Awesome icons
+✅ Data validation with Joi
+🗂️ Session handling using express-session
 
-create a folder models and in side of listing.js file
 
-create a folder initialize (init) and in side of data.js file for ramdam data and one more file is index.js
+🛠️ Tech Stack
+Backend: Node.js, Express.js
+Frontend: EJS, Bootstrap 5, Font Awesome
+Database: MongoDB with Mongoose ODM
+Authentication: Passport.js (passport-local, passport-local-mongoose)
+File Uploads: Multer, Multer-Storage-Cloudinary, Cloudinary
+Utilities: dotenv, connect-flash, method-override, ejs-mate
 
-create a folder views in side of listings, layout folder and in side listings : index.ejs, new.ejs, show.ejs, edit.ejs file and inside of layout : boilerplate.ejs
 
-create a folder public and inside the css folder and in side the css style.css
+⚙️ Installation & Setup
+# Clone the repository
+git clone https://github.com/your-username/airbnb-clone.git
+# Navigate to project folder
+cd airbnb-clone
+# Initialize package.json
+npm init -y
+# Install dependencies
+npm install express ejs mongoose method-override ejs-mate \
+express-session connect-flash passport passport-local \
+passport-local-mongoose multer dotenv cloudinary \
+multer-storage-cloudinary joi
 
-using the bootstrap for style and icon using font awesome
+🗄️ Database Setup (MongoDB)
+1-Install MongoDB locally or use MongoDB Atlas.
+2-Update your .env file with MongoDB URI and Cloudinary credentials:
+DB_URL=mongodb://127.0.0.1:27017/airbnb-clone
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_KEY=your_key
+CLOUDINARY_SECRET=your_secret
+SECRET=your_session_secret
 
-using joi
+▶️ Run the Project
+nodemon app.js
